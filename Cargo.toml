@@ -1,0 +1,11 @@
+[package]
+name = "fetch"
+version = "0.0.1"
+edition = "2021"
+authors = ["Chase Alexander"]
+description = "A modular Rust system fetch tool"
+license = "Public Domain"
+readme = "README.md"
+
+[dependencies]
+unicode-width = "0.1"
