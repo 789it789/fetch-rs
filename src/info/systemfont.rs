@@ -3,13 +3,14 @@ use std::fs;
 use std::path::Path;
 
 pub fn get() -> String {
+
     if let Ok(output) = Command::new("gsettings")
         .args(&["get", "org.gnome.desktop.interface", "font-name"])
         .output()
         {
             if !output.stdout.is_empty() {
                 let s = String::from_utf8_lossy(&output.stdout);
-                return s.trim_matches('\'').to_string(); // remove quotes
+                return s.trim().trim_matches('\'').to_string(); // <-- fix
             }
         }
 
