@@ -1,2 +1,2 @@
 Public Domain rust screenfetch program.
-Makes use of acecat-c and lolcat-c prgrams of mine.
+Displays a protogen ASCII art with the Ace flag, and a rainbow colored info block.
